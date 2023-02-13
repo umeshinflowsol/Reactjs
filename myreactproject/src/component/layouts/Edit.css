@@ -1,0 +1,28 @@
+.NavBar {
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgb(18, 82, 184);
+}
+.NavBar > li {
+  margin: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.link {
+  color: aqua;
+}
+.button {
+  max-width: 20px;
+}
+  
+th {
+  color: blue;
+}
+tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+tr:nth-child(even) {
+  background-color: lightblue;
+}
