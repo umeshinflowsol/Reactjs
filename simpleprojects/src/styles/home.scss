@@ -1,0 +1,97 @@
+@import "colors.scss";
+
+.home {
+  width: 100%;
+  height: 50vh;
+  background-color: $second;
+  color: white;
+  border-radius: 0 0 200px 200px;
+
+  > main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    justify-content: center;
+    > h1 {
+      font: 400 6rem "Roboto";
+    }
+    p {
+      font: 900 1 rem "Roboto";
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto
+      url(https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFudW1hbnxlbnwwfHwwfHw%3D&w=1000&q=80);
+    filter: blur(5px);
+  }
+}
+.home2 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  padding: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    height: 100vh;
+  }
+  p {
+    color: $first;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font: 100 1.2rem $text2;
+    flex-direction: column;
+  }
+}
+.home3 {
+  width: 100%;
+  height: 120vh;
+  background-color: $second;
+  margin-top: -200px;
+  display: flex;
+
+  > div {
+    width: 70%;
+    height: 100vh;
+    background-color: $first;
+    border-radius: 0 200px 200px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid $dark;
+      padding: 0.5rem;
+      width: 15rem;
+      color: $dark;
+      justify-content: center;
+    }
+    > P {
+      padding: 5rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 170%;
+      font: italic 100 1.2rem $text2;
+    }
+  }
+}
